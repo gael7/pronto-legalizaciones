@@ -1,0 +1,36 @@
+{
+  "name": "pronto-legalizaciones",
+  "version": "1.0.0",
+  "description": "Pronto Legalizaciones webpage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --optimize-minimize --define process.env.NODE_ENV='production'",
+    "start": "node server-dev.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gael7/pronto-legalizaciones.git"
+  },
+  "author": "Gael Arrambide",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gael7/pronto-legalizaciones/issues"
+  },
+  "homepage": "https://github.com/gael7/pronto-legalizaciones#readme",
+  "dependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "express": "^4.15.2",
+    "path": "^0.12.7",
+    "prop-types": "^15.5.9",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-router": "^4.1.1",
+    "react-router-dom": "^4.1.1",
+    "webpack": "^2.3.3",
+    "webpack-dev-middleware": "^1.10.1"
+  }
+}
