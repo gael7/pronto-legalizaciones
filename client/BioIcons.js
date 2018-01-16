@@ -14,7 +14,7 @@ class BioIcons extends React.Component {
                 <i className='medium material-icons'>{this.props.icon}</i>
               </h2>
               <h5 className='center light-blue-text'>{this.props.title}</h5>
-              <p className='light-blue-text'>{this.props.info}</p>
+              <p className='center light-blue-text'>{this.props.info}</p>
             </div>
           </div>
     )

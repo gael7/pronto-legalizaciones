@@ -15,8 +15,9 @@ class NavigationBar extends React.Component {
               <div className="nav-wrapper yellow">
                   <a href="#" className="brand-logo center light-blue-text">Pronto</a>
                   <ul id="nav-mobile" class="left hide-on-med-and-down">
-                    <li><a href="">Quiénes Somos</a></li>
-                    <li><a href="">Contáctanos</a></li>
+                    <li><a href="#quien">Quiénes Somos</a></li>
+                    <li><a href="#requisitos">Requisitos</a></li>
+                    <li><a href="#contactanos">Contáctanos</a></li>
                   </ul>
                 </div>
             </nav>

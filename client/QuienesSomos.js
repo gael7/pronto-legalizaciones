@@ -11,7 +11,7 @@ class QuienesSomos extends React.Component {
   }
   render (){
     return(
-      <div className="cont-background">
+      <div className="cont-background yellow" id="quien">
         <div className="container">
           <div className="section">
             <div className="row">
