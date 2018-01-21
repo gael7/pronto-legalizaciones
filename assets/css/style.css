@@ -7,6 +7,10 @@
   font-weight: bold;
 }
 
+.hoverable:hover {
+  box-shadow: 0 8px 17px 0 rgba(255, 255, 255, 0.9), 0 6px 20px 0 rgba(255, 255, 255, 0.9) !important;
+}
+
 body {
     display: flex;
     min-height: 100vh;
@@ -16,3 +20,7 @@ body {
   main {
     flex: 1 0 auto;
   }
+
+#map {
+  height: 100%;
+}

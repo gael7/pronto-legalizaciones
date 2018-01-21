@@ -12,20 +12,18 @@ class Pronto extends React.Component {
     const icons = [{
       icon: "directions_car",
       title: "Título",
-      info: "Título de propiedad del vehiculo"
+      info: "Título de propiedad del vehículo que desea importar a México."
     },{
       icon: "face",
-      title: "ID",
-      info: "Identificación oficial con foto (IFE, Pasaporte)"
+      title: "Identificación",
+      info: "Identificación oficial con foto como credencial de elector (INE) o pasaporte del propietario."
     },{
       icon: "photo",
       title: "VIN Number",
-      info: "Foto del número de serie"
+      info: "Foto del número de serie del vehículo que puede ser encontrado en la base del parabrisas."
     }];
 
     this.state = {
-      title: 'Pronto Legalizaciones',
-      summary: '',
       icons
     };
   }
@@ -33,24 +31,31 @@ class Pronto extends React.Component {
   render (){
     return(
       <div>
-        <NavigationBar color={this.state.color}/>
+        <NavigationBar/>
         <header>
         <Jumbotron />
         </header>
         <body>
         <QuienesSomos />
-        <div className="cont-background" id="requisitos">
-          <div className="container">
-            <div className="section">
-              <h4 className="center">Requisitos</h4>
-              <div className="row" id="iconSection">
-                {this.state.icons.map((icon, index) => (
-                  <BioIcons key={index} icon={icon.icon} title={icon.title} info={icon.info}/>
-                ))}
+        <div className="parallax-container" id="requisitos">
+          <div className="section no-pad-bot">
+            <div className="container yellow-text text-darken-1">
+                <h3 className="center hide-on-med-and-down">Requisitos</h3>
+                <h4 className="center hide-on-large-only">Requisitos</h4>
+                <div className="row" id="iconSection">
+                  {this.state.icons.map((icon, index) => (
+                    <div key={index}>
+                    <BioIcons icon={icon.icon} title={icon.title} info={icon.info}/>
+                      <div className="card-panel hide-on-med-and-up red darken-4">
+                        <span className="white-text"><i className='small material-icons'>{icon.icon}</i>&nbsp;{icon.title+ ": " +icon.info}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
+            <div className="parallax"><img src="/images/background-1.jpg" alt="" /></div>
           </div>
-        </div>
         <Contactanos />
         </body>
         <Footer />

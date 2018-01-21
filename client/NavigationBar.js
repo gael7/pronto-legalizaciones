@@ -10,18 +10,26 @@ class NavigationBar extends React.Component {
 
     render() {
         return (
+        <div>
           <div className='navbar-fixed'>
             <nav>
-              <div className="nav-wrapper yellow">
-                  <a href="#" className="brand-logo center light-blue-text">Pronto</a>
-                  <ul id="nav-mobile" class="left hide-on-med-and-down">
-                    <li><a href="#quien">Quiénes Somos</a></li>
-                    <li><a href="#requisitos">Requisitos</a></li>
-                    <li><a href="#contactanos">Contáctanos</a></li>
+              <div className="nav-wrapper blue darken-4">
+                  <a href="#!" className="brand-logo left yellow-text text-darken-1 bolder">&nbsp;Pronto</a>
+                  <a href="#" data-activates="mobile-demo" className="right button-collapse yellow-text text-darken-1"><i className="material-icons">menu</i></a>
+                  <ul className="right hide-on-med-and-down">
+                    <li><a className="yellow-text text-darken-1 bolder" href="#quien">Quiénes Somos</a></li>
+                    <li><a className="yellow-text text-darken-1 bolder" href="#requisitos">Requisitos</a></li>
+                    <li><a className="yellow-text text-darken-1 bolder" href="#contactanos">Contáctanos</a></li>
                   </ul>
-                </div>
+              </div>
             </nav>
           </div>
+          <ul className="side-nav" id="mobile-demo">
+            <li><a href="#quien">Quiénes Somos</a></li>
+            <li><a href="#requisitos">Requisitos</a></li>
+            <li><a href="#contactanos">Contáctanos</a></li>
+          </ul>
+        </div>
         );
     }
 }

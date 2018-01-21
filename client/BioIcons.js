@@ -8,13 +8,13 @@ class BioIcons extends React.Component {
   }
   render (){
     return(
-          <div className='col s12 m4'>
+          <div className='col s12 m4 hide-on-small-only'>
             <div className='icon-block'>
-              <h2 className='center light-blue-text'>
+              <h2 className='center red-text text-darken-4'>
                 <i className='medium material-icons'>{this.props.icon}</i>
               </h2>
-              <h5 className='center light-blue-text'>{this.props.title}</h5>
-              <p className='center light-blue-text'>{this.props.info}</p>
+              <h5 className='center red-text text-darken-4 bolder'>{this.props.title}</h5>
+              <p className='center red-text text-darken-4 bolder'>{this.props.info}</p>
             </div>
           </div>
     )

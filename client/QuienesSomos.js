@@ -11,12 +11,13 @@ class QuienesSomos extends React.Component {
   }
   render (){
     return(
-      <div className="cont-background yellow" id="quien">
+      <div className="cont-background yellow darken-1" id="quien">
         <div className="container">
           <div className="section">
             <div className="row">
-              <div className="col s12 center light-blue-text" id="aboutMe">
-                <h4>{this.state.title}</h4>
+              <div className="col s12 center blue-text text-darken-4">
+                <h3 className="hide-on-med-and-down">{this.state.title}</h3>
+                <h4 className="hide-on-large-only">{this.state.title}</h4>
                 <div className="col s12 m6">
                   <p className="left-align">{this.state.aboutMe}</p>
                   <p className="left-align">{this.state.aboutMe2}</p>

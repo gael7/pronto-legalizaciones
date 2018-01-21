@@ -8,7 +8,7 @@ export class Footer extends React.Component {
   }
   render() {
     return (
-        <footer className="page-footer yellow">
+        <footer className="page-footer blue darken-4">
           <div className="container">
             <div className="row">
               <div className="col l6 s12">
