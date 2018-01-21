@@ -16,6 +16,10 @@ class Contactanos extends React.Component {
       email: " autosjr118@hotmail.com",
       address: " 9101A San Mateo Dr., Laredo, TX., 78045",
       fb:"/prontolegalizacionestx",
+      style: {
+        border:"none",
+        overflow: "hidden"
+      }
     };
   }
   render (){
@@ -41,22 +45,7 @@ class Contactanos extends React.Component {
             <p><span className="bolder">{this.state.time3}</span>{this.state.time4}</p>
             <p><i className='material-icons'>phone</i>{this.state.tel}</p>
             <p><i className='material-icons'>email</i>{this.state.email}</p>
-          <div className="row">
-            <div className="col s1 m1 offset-s2 offset-m3">
-              <img className="socialLogos" src="images/fb.png"/>
-            </div>
-            <div className="col s6 m4 offset-s1">
-              <p>{this.state.fb}</p>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col s1 m1 offset-s2 offset-m3">
-              <img className="socialLogos" src="images/wa.png"/>
-            </div>
-            <div className="col s6 m4 offset-s1">
-              <p>{this.state.tel}</p>
-            </div>
-          </div>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprontolegalizacionestx%2F&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="130" style={this.state.style} scrolling="no" frameborder="0" allowTransparency="true"></iframe>
         </div>
           </div>
         </div>

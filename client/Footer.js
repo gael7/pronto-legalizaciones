@@ -4,7 +4,11 @@ import React from 'react';
 export class Footer extends React.Component {
   constructor(){
     super();
-
+    this.state = {
+      title: "Pronto Legalizaciones",
+      sum: "Presupuestos sin compromiso, llámenos o mándenos mensaje por Whatsapp/Facebook las 24 horas del día.",
+      created: "Creado por Gael Arrambide"
+      }
   }
   render() {
     return (
@@ -12,21 +16,15 @@ export class Footer extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col l6 s12">
-                <h5 className="white-text">Footer Content</h5>
-                <p className="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-              </div>
-              <div className="col l4 offset-l2 s12">
-                <h5 className="white-text">Links</h5>
-                <ul>
-                  <li><a className="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                </ul>
+                <h5 className="yellow-text text-darken-1">{this.state.title}</h5>
+                <p className="yellow-text text-darken-1">{this.state.sum}</p>
               </div>
             </div>
           </div>
           <div className="footer-copyright">
             <div className="container">
-            © 2014 Copyright Text
-            <a className="grey-text text-lighten-4 right" href="#!">More Links</a>
+            {this.state.created}
+            <a className="grey-text text-lighten-4 right" href="http://www.gaelarrambide.com"><i className="material-icons">language</i></a>
             </div>
           </div>
         </footer>
