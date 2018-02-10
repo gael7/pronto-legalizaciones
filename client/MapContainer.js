@@ -7,19 +7,22 @@ export class MapContainer extends React.Component {
     const containerStyle = {
       position: "relative",
       width: "100%",
-      height: "80%",
+      height: "75%",
     };
+
     const center = {
       lat: 27.599656,
       lng: -99.497304
     };
+
     this.state= {
      containerStyle,
      center,
-     showingInfoWindow: false,
+     showingInfoWindow: true,
       activeMarker: {},
       name: "Pronto Legalizaciones"
     };
+
     this.onMarkerClick = this.onMarkerClick.bind(this);
     this.onMapClicked = this.onMapClicked.bind(this);
   }
@@ -36,8 +39,8 @@ export class MapContainer extends React.Component {
     if (this.state.showingInfoWindow) {
       this.setState({
         showingInfoWindow: false,
-        activeMarker: null
-      })
+        activeMarker: true
+      });
     }
   }
 

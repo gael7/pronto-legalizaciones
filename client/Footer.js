@@ -12,12 +12,12 @@ export class Footer extends React.Component {
   }
   render() {
     return (
-        <footer className="page-footer blue darken-4">
+        <footer className="page-footer nav-color">
           <div className="container">
             <div className="row">
               <div className="col l6 s12">
-                <h5 className="yellow-text text-darken-1">{this.state.title}</h5>
-                <p className="yellow-text text-darken-1">{this.state.sum}</p>
+                <h5 className="white-text">{this.state.title}</h5>
+                <p className="white-text">{this.state.sum}</p>
               </div>
             </div>
           </div>

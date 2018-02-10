@@ -1,39 +1,52 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 class NavigationBar extends React.Component {
     constructor(){
         super();
+      const sections = [{
+        ref: "home",
+        icon: "home",
+        text: "Home"
+      },{
+        ref: "quienes",
+        icon: "people",
+        text: "Quiénes Somos"
+      },{
+        ref: "requisitos",
+        icon: "assignment",
+        text: "Requisitos"
+      },{
+        ref: "contacto",
+        icon: "phone",
+        text: "Contacto"
+      },{
+        ref: "mapa",
+        icon: "map",
+        text: "Ubicación"
+      }];
         this.state = {
-        }
+          sections
+        };
     }
 
     render() {
         return (
-        <div>
-          <div className='navbar-fixed'>
+
+          <div>
+            <div className="above-bar">
+            </div>
             <nav>
-              <div className="nav-wrapper blue darken-4">
-                  <a href="#!" className="brand-logo left yellow-text text-darken-1 bolder">&nbsp;Pronto</a>
-                  <a href="#" data-activates="mobile-demo" className="right button-collapse yellow-text text-darken-1"><i className="material-icons">menu</i></a>
-                  <ul className="right hide-on-med-and-down">
-                    <li><a className="yellow-text text-darken-1 bolder" href="#quien">Quiénes Somos</a></li>
-                    <li><a className="yellow-text text-darken-1 bolder" href="#requisitos">Requisitos</a></li>
-                    <li><a className="yellow-text text-darken-1 bolder" href="#contactanos">Contáctanos</a></li>
-                  </ul>
+              <div className="nav-wrapper nav-color">
+                <ul id="nav-mobile" className="center hide-on-med-and-down">
+                {this.state.sections.map((section, index)=>(
+                  <li key={index} className="nav-menu "><a href={"#"+section.ref}><i className="material-icons left">{section.icon}</i>{section.text}</a></li>
+                ))}
+                </ul>
               </div>
             </nav>
-          </div>
-          <ul className="side-nav" id="mobile-demo">
-            <li><a href="#quien">Quiénes Somos</a></li>
-            <li><a href="#requisitos">Requisitos</a></li>
-            <li><a href="#contactanos">Contáctanos</a></li>
-          </ul>
         </div>
         );
     }
 }
-NavigationBar.PropTypes = {
-  color: PropTypes.string.isRequired
-}
+
 export default NavigationBar;

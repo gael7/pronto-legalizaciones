@@ -1,61 +1,33 @@
 import React from 'react';
 
 class QuienesSomos extends React.Component {
-  constructor(){
+  constructor() {
     super();
     this.state = {
       title: "Quiénes Somos",
-      aboutMe: "Empresa con 13 años de experiencia en importación y legalización de automóviles y camionetas, tractocamiones, semirremolques y mercancía en general. Con la mejor atención al cliente brindando un servicio al confiable y rápido.",
-      aboutMe2: "Presupuesto sin compromiso",
+      aboutMe: "Pronto fue creada en 2008 pero tiene detrás mas de 13 años de experiencia en importación y legalización definitiva de automóviles y camionetas, tractocamiones, semirremolques y mercancía en general desde Laredo, TX.",
+      aboutMe2: "Con la mejor atención al cliente brindando un servicio confiable y rápido. Presupuesto y asesoría sin compromiso.",
+      src: "/images/logo-square2.png"
     };
   }
-  render (){
-    return(
-      <div className="cont-background yellow darken-1" id="quien">
+  render() {
+    return (
+      <div className="body-background" id="quienes">
         <div className="container">
-          <div className="section">
-            <div className="row">
-              <div className="col s12 center blue-text text-darken-4">
-                <h3 className="hide-on-med-and-down">{this.state.title}</h3>
-                <h4 className="hide-on-large-only">{this.state.title}</h4>
-                <div className="col s12 m6">
-                  <p className="left-align">{this.state.aboutMe}</p>
-                  <p className="left-align">{this.state.aboutMe2}</p>
-                </div>
-                <div className="col s12 m6">
-                    <div className="carousel carousel-slider center" data-indicators="true">
-                      <div className="carousel-item white-text" href="#one!">
-                        <img src="/images/1.jpg" />
-                      </div>
-                      <div className="carousel-item white-text" href="#two!">
-                        <img src="/images/2.jpg" />
-                      </div>
-                      <div className="carousel-item white-text" href="#three!">
-                        <img src="/images/3.jpg" />
-                      </div>
-                      <div className="carousel-item white-text" href="#four!">
-                        <img src="/images/4.jpg" />
-                      </div>
-                      <div className="carousel-item white-text" href="#five!">
-                        <img src="/images/5.jpg" />
-                      </div>
-                      <div className="carousel-item white-text" href="#six!">
-                        <img src="/images/6.jpg" />
-                      </div>
-                      <div className="carousel-item white-text" href="#seven!">
-                        <img src="/images/7.jpg" />
-                      </div>
-                      <div className="carousel-item white-text" href="#eight!">
-                        <img src="/images/8.jpg" />
-                      </div>
-                    </div>
-                </div>
-              </div>
-            </div>
+      <div className="col s12 center white-text">
+        <h1 className="border-webkit">{this.state.title}</h1>
+        <div className="row">
+          <div className="col s12 l6">
+            <h5 className="left-align">&nbsp; {this.state.aboutMe}</h5>
+            <h5 className="left-align">&nbsp; {this.state.aboutMe2}</h5>
+          </div>
+          <div className="col s12 l6">
+            <img src={this.state.src} className="pronto-logo"/>
           </div>
         </div>
       </div>
-    )
+      </div>
+    </div>)
   }
 }
 
