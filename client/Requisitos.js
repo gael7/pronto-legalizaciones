@@ -39,7 +39,7 @@ class Requisitos extends React.Component {
               <div key={index} className='col s12 l4'>
                 <div className="card">
               <div className="card-image">
-                <img src={"/images/"+icon.image}/>
+                <img src={"/images/"+icon.image} alt={icon.title}/>
                 <span className="card-title">{icon.title}</span>
                   <a className="btn-floating halfway-fab icon-back"><i class="material-icons">{icon.icon}</i></a>
               </div>

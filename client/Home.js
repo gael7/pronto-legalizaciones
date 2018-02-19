@@ -15,16 +15,16 @@ class Home extends React.Component {
       src: "semi.jpg"
     }, {
       name: "Maquinaria pesada",
-      src: "autos.jpg"
+      src: "maquinaria.jpg"
     },{
       name: "Motocicletas",
       src: "motos.jpg"
     }, {
       name: "Lanchas",
-      src: "autos.jpg"
+      src: "lancha.jpg"
     }, {
       name: "Motos acuáticas",
-      src: "autos.jpg"
+      src: "acuatica.jpg"
     }, {
       name: "Mercancía en general",
       src: "mercancia.jpg"

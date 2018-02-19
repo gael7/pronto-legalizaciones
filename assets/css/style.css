@@ -75,6 +75,10 @@
 .btn-back, .btn-back:hover{
   background-color: #FF5252;
 }
+
+.whatsapp-back, .whatsapp-back:hover{
+  background-color: rgb(44,189,165)
+}
 @media screen and  (max-width: 600px) {
   .above-bar {
     height: 150px;

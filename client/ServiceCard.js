@@ -9,7 +9,7 @@ class ServiceCard extends React.Component {
     return(  <div className="col s6 m6 l3 xl3">
                   <div className="card">
                     <div className="card-image">
-                      <img src={"/images/"+this.props.src}/>
+                      <img src={"/images/"+this.props.src} alt={this.props.name}/>
                     </div>
                       <div className="card-content card-back white-text">
                         {this.props.name}

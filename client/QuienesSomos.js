@@ -22,7 +22,7 @@ class QuienesSomos extends React.Component {
             <h5 className="left-align">&nbsp; {this.state.aboutMe2}</h5>
           </div>
           <div className="col s12 l6">
-            <img src={this.state.src} className="pronto-logo"/>
+            <img src={this.state.src} className="pronto-logo" alt="Logo de Pronto Legalizaciones"/>
           </div>
         </div>
       </div>
